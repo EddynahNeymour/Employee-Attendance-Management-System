@@ -1,0 +1,19 @@
+h3{
+     font-weight: bold;
+	 font-family: san-serif;
+	 color: white;
+	 font-size: 25pt;
+}
+
+.bgColor{
+	 background-color: #800000;
+}
+
+body{
+	background-color: #B99976;
+}
+
+td{
+	 color: white;
+	 font-family: serif;
+}

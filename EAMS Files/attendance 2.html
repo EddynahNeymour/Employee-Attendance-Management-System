@@ -1,0 +1,1409 @@
+<html lang="en">
+     <head> <title> Employee Atendance Management System</title>
+	 
+	 <link rel="stylesheet" 
+	  type="text/css" 
+	  href="bootstrap.css"
+	  />
+	  
+	 <link rel="stylesheet" 
+	  type="text/css" 
+	  href="styles.css"
+	  />
+	  
+	 <body class="p-1">
+	     <form name="Employee" method="post" action="attendance.html"
+	  
+	     <div class="container">
+	     <div class="row">
+	         <table class="bgColor">
+		     <thead>
+		     <h3 class="bgColor">
+			     <b>Employee Weekly Attendance &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+				 &nbsp &nbsp &nbsp &nbsp EAMS
+			     </b>
+			 </h3>
+		     </thead>
+			    <tr>
+				 <td>No.</td><td>Employee Name</td><td>Department</td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			     <td>Mark Attendance<br><input type="date" id="iMark" value=""></td>
+			    </tr>
+				
+			    <tr>
+			     <td><center>1</center></td>
+				 <td class="p-2 md-2">Ashley Millis</td>
+				 <td class="text-center">Marketing</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF2">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF3">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF4">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF5">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF6">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF7">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>2</center></td>
+				 <td class="p-2 md-2">Ben Carter</td>
+				 <td class="text-center">HR</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF2">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF3">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF4">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF5">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF6">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF7">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>3</center></td>
+				 <td class="p-2 md-2">Barbra Laing</td>
+				 <td class="text-center">Supply</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF2">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF3">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF4">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF5">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF6">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF7">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>4</center></td>
+				 <td class="p-2 md-2">Centhia Smith</td>
+				 <td class="text-center">Marketing</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF2">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF3">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF4">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF5">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF6">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF7">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>5</center></td>
+				 <td class="p-2 md-2">Cathy Davis</td>
+				 <td class="text-center">Finance</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF2">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF3">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF4">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF5">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF6">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF7">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>6</center></td>
+				 <td class="p-2 md-2">Conner McDonald</td>
+				 <td class="text-center">Maint</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF1">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>7</center></td>
+				 <td class="p-2 md-2">Dave Millis</td>
+				 <td class="text-center">HR</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+                <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>8</center></td>
+				 <td class="p-2 md-2">Dan Hunt</td>
+				 <td class="text-center">CFO</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+			    <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>9</center></td>
+				 <td class="p-2 md-2">Davis McDonald</td>
+				 <td class="text-center">Finance</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+                <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>10</center></td>
+				 <td class="p-2 md-2">Denny Laing</td>
+				 <td class="text-center">IT</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>11</center></td>
+				 <td class="p-2 md-2">Esther Cox</td>
+				 <td class="text-center">HR</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>12</center></td>
+				 <td class="p-2 md-2">Gregory.T.Moore</td>
+				 <td class="text-center">Maint</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+			    <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>13</center></td>
+				 <td class="p-2 md-2">Hunter Davis</td>
+				 <td class="text-center">GM</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+				<!------------------------------------------------------------------>
+				<tr>
+			     <td><center>14</center></td>
+				 <td class="p-2 md-2">Ian.B.Melbourne</td>
+				 <td class="text-center">REP</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+		        <!------------------------------------------------------------------>
+				<tr>
+			     <td><center>15</center></td>
+				 <td class="p-2 md-2">Lester Hilton</td>
+				 <td class="text-center">REP</td>
+				 
+				 <td>
+				     <select name="Row1Col" id="iRow1Col" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present1">Present</option>
+				     <option value = "late1">Late</option>
+				     <option value = "absent1">Absent</option>
+				     <option value = "sick leave1">Sick Leave</option>
+					 <option value = "paid leave1">Paid Leave</option>
+					 </select>
+				 </td>
+
+				 <td>
+				     <select name="Row1Col2" id="iRow1Col2" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present2">Present</option>
+				     <option value = "late2">Late</option>
+				     <option value = "absent2">Absent</option>
+				     <option value = "sick leave2">Sick Leave</option>
+					 <option value = "paid leave2">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col3" id="iRow1Col3" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present3">Present</option>
+				     <option value = "late3">Late</option>
+				     <option value = "absent3">Absent</option>
+				     <option value = "sick leave3">Sick Leave</option>
+					 <option value = "paid leave3">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col4" id="iRow1Col4" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present4">Present</option>
+				     <option value = "late4">Late</option>
+				     <option value = "absent4">Absent</option>
+				     <option value = "sick leave4">Sick Leave</option>
+					 <option value = "paid leave4">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col5" id="iRow1Col5" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present5">Present</option>
+				     <option value = "late5">Late</option>
+				     <option value = "absent5">Absent</option>
+				     <option value = "sick leave5">Sick Leave</option>
+					 <option value = "paid leave5">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col6" id="iRow1Col6" style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present6">Present</option>
+				     <option value = "late6">Late</option>
+				     <option value = "absent6">Absent</option>
+				     <option value = "sick leave6">Sick Leave</option>
+					 <option value = "paid leave6">Paid Leave</option>
+					 </select>
+				 </td>
+				 
+				 <td>
+				     <select name="Row1Col7" id="iRow1Col"7 style="width: 120px margin: 1px; text-align: right"
+				     onchange="myMark1(this.value);">
+				     <option value = "OFF">OFF</option>
+				     <option value = "present7">Present</option>
+				     <option value = "late7">Late</option>
+				     <option value = "absent7">Absent</option>
+				     <option value = "sick leave7">Sick Leave</option>
+					 <option value = "paid leave7">Paid Leave</option>
+					 </select>
+				 </td>
+			    </tr>
+				
+				<!------------------------------------------------------------------>
+				
+				<tr>
+				  <td colspan=3 class="p-2"> Total No of Employees</td>
+				
+				 <td>
+				  <input type"text" name="txtregister" id="txt" style="width: 120px; text-align: center" value=0>
+				 </td>
+			    </tr>
+	     </div>
+	     </div>
+		 
+		 <script>
+		     function myMark1(element) {
+			     var q = parseInt(document.getElementbyId("txt").value);
+				 document.getElementbyId("txt").value = q + 1; 
+				}
+		 </script>
+	     </form>
+	 </body>
+</html>
